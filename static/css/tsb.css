@@ -1,0 +1,81 @@
+html, body {
+    height: 100vh;
+    margin: 0px;
+}
+
+body {
+    background-image: url(/static/img/bg.jpg);
+    background-position-x: center;
+}
+
+.topbar {
+    height: 50px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.topbar > img {
+    height: 40px;
+    margin: 5px;
+}
+
+.ham {
+    float: left;
+}
+
+.dashboard-container {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.sidebar-container, .chatbar-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+}
+
+.sidebar, .chatbar {
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.sidebar > *, .chatbar > * {
+    padding: 3vh;
+    width: 100%;
+}
+
+.menu-option {
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-option:hover {
+    color: red;
+}
+
+.close-btn, .chat-close-btn {
+    height: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .topbar > img {
+        height: 30px;
+        margin: 15px;
+    }
+}

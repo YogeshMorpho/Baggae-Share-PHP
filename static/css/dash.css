@@ -1,0 +1,44 @@
+.flight-cont {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 5px;
+    margin: 5px;
+    max-width: 400px;
+    width: 80%;
+    border-radius: 15px;
+    color: white;
+}
+
+.flight-cont:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.seat-select {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.select-close {
+    width: 50px;
+}
+
+.seat-select {
+    display: none;
+}
+
+table {
+    margin: 100px
+}
+td {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}

@@ -1,0 +1,78 @@
+html, body, .hero-container {
+    min-height: 100vh;
+    margin: 0px;
+}
+
+body {
+    background-image: url(/static/img/bg.jpg);
+    background-position-x: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.logo-img {
+    max-width: 80vw;
+    margin-block-end: 50px;
+}
+
+.sel-btn {
+    max-width: 80vw;
+    margin: 20px;
+}
+
+.sel-btn > button {
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgba(25, 255, 255, 0.3);
+    border-radius: 50px;
+}
+
+#login {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: green;
+    border-right: 0px;
+}
+
+#signup {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 0px;
+}
+
+.login-usr, .signup-usr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: 50px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.login-usr > *, .signup-usr > * {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color:#D50032;
+    color: white;
+    border: 0px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.login-usr > button, .signup-usr > button {
+    width: 100px;
+}
+
+.signup-usr {
+    display: none;
+}
